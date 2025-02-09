@@ -1,0 +1,298 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#lp-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    height: 100px;
+}
+
+.hoofdbalk {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    margin-left: 40%;
+    width: 60%;
+    height: 63px;
+}
+
+.home, .about, .projects, .contact, .a-bout {
+    display: flex;
+    flex-direction: row;
+    color: #DDD5CB;
+    font-size: 30px;
+    font-family: Times New Roman;
+    margin-top: 16px;
+}
+
+a {
+    color: #DDD5CB;
+    font-family: Times New Roman;
+    font-size: 30px;
+}
+
+.lijn-mb {
+    background-color: #DDD5CB;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+/* Text content */
+.textlp-container {
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.textlp-h, .textlp-w, .textlp-d {
+    color: #DDD5CB;
+    font-family: Times New Roman;
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+.logos-chj {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+}
+
+/* Projects page */
+.project, .project-week, .Website1, .mastermind {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 170px;
+    margin-left: 50px;
+}
+
+.project-text, .text-about {
+    display: flex;
+    flex-direction: column;
+    font-family: Times New Roman;
+    color: #DDD5CB;
+    font-size: 24px;
+    width: 630px;
+    margin-left: 30px;
+}
+
+.text-title {
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+
+.project-week-title, .Website1-title, .mastermind-title {
+    display: flex;
+    height: auto;
+    font-size: 30px;
+    justify-content: center;
+    font-family: Times New Roman;
+    margin: 10px;
+    color: #DDD5CB;
+}
+
+/* About page */
+.pagina {
+    display: flex;
+    background-color: #182B44;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    color: #DDD5CB;
+    font-size: 30px;
+    margin-left: 66px;
+    font-family: Times New Roman;
+    width: 100px;
+}
+
+.name, .age, .iamfrom, .study, .completed, .busywith {
+    display: flex;
+    margin: 0;
+    color: #DDD5CB;
+    font-size: 24px;
+    font-family: Times New Roman;
+}
+
+.foto-container {
+    display: flex;
+    background-color: #DDD5CB;
+    width: 400px;
+    height: 400px;
+    margin-left: 600px;
+    border-radius: 40px;
+    margin-top: 25px;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    margin-left: 170px;
+    font-size: 30px;
+    margin-top: -5px;
+    color: black;
+}
+
+.alle-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    height: auto;
+    background-color: #178DAD;
+    color: #DDD5CB;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.social-icon {
+    margin-right: 50px;
+    width: 40px;
+    height: 77px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #DDD5CB;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #DDD5CB;
+    font-family: Times New Roman;
+    font-size: 30px;
+}
+
+/* Contact page */
+.contact-pagina-container {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+}
+
+.contact-title {
+    display: flex;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: Times New Roman;
+}
+
+.mail-logo {
+    display: flex;
+    width: 44px;
+    height: 33px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+input, textarea, button {
+    width: 200px;
+}
+
+button {
+    width: 100px;
+}
+
+label {
+    margin: 0;
+    color: #DDD5CB;
+    font-size: 24px;
+    font-family: Times New Roman;
+}
+
+@media (max-width: 768px) {
+    .hoofdbalk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagina {
+        height: auto;
+    }
+
+    .foto-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .textlp-container {
+        width: 100%;
+        margin-left: 0;
+    }
+}

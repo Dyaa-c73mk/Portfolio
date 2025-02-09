@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <header>
+            <div class="hoofdbalk">
+                <a href="index.html" class="home">Home</a>
+                <a href="about.html" class="a-bout">About</a>
+                <nav>
+                    <ul>
+                        <li class="projects"><a href="#">Projects:</a></li>
+                        <li><a href="mastermind.html">Mastermind</a></li>
+                        <li><a href="website1.html">Website1</a></li>
+                        <li><a href="projectweek.html">Project Week</a></li>
+                    </ul>
+                </nav>
+                <a href="contact.html" class="contact">Contact</a>
+            </div>
+        </header>
+
+        <div class="lijn-mb"></div>
+
+        <section class="contact-pagina-container">
+            <p class="contact-title">Contact</p>
+            <img class="mail-logo" src="img/mailLogo.png" alt="Mail logo">
+        </section>
+
+        <form class="contactForm" id="contactForm">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="question">Your Question</label><br>
+            <textarea id="question" name="question" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="successMessage" style="display:none;">Your message has been sent!</div>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault(); 
+
+                const fullname = document.getElementById('fullname').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const question = document.getElementById('question').value.trim();
+
+                const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+
+                document.getElementById('successMessage').style.display = 'block';
+
+                document.getElementById('contactForm').reset();
+            });
+        </script>
+
+    </div>
+
+    <footer id="footer">
+        <div class="social-links">
+            <a href="https://www.instagram.com/dyaa_024_nmg" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://github.com/Dyaa-c73mk" target="_blank">
+                <img src="img/github.png" alt="GitHub" class="social-icon">
+            </a>
+
+        <div class="contact-info">
+            <p>Email: <a href="mailto:1210789@student.roc-nijmegen.nl">1210789@student.roc-nijmegen.nl</a></p>
+            <p>Phone:+31 686209997</p>
+        </div>
+    </div>
+    </footer>
+
+</body>
+
+</html>
